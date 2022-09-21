@@ -1,6 +1,6 @@
 import React from "react";
 
-export const inputDefault = ({
+export const InputDefault = ({
   typeI,
   autocomplete,
   disable,
@@ -12,6 +12,7 @@ export const inputDefault = ({
   placeholder
 }) => {
   return (
+    
     <input
       type={typeI}
       autoComplete={autocomplete ? autocomplete : "on"}
@@ -23,5 +24,6 @@ export const inputDefault = ({
       {... maxlength? (`maxlength="${maxlength}"`):("")}
       {... minlength? (`minlength="${minlength}"`):("")}
     ></input>
+      
   );
 };
