@@ -1,7 +1,10 @@
 import React from 'react'
 
-export const ButtonDefault = ()  => {
+export const ButtonDefault = ({
+  Name,
+  OnClick
+})  => {
   return (
-    <button></button>
+    <button onClick={OnClick}>{Name}</button>
     )
 }
