@@ -1,10 +1,10 @@
 import React from 'react'
-
+import { Button } from './style'
 export const ButtonDefault = ({
   Name,
   OnClick
 })  => {
   return (
-    <button onClick={OnClick}>{Name}</button>
+    <Button onClick={OnClick}>{Name}</Button>
     )
 }
